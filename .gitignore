@@ -1,0 +1,29 @@
+# Node.js dependencies
+/node_modules/
+
+# Firebase configuration files
+firebase-adminsdk.json
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build output
+/dist
+/build
+
+# IDE/Editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NPM package lock file (optional, depending on your workflow)
+package-lock.json
+
+# Yarn lock file (if using Yarn)
+yarn.lock
