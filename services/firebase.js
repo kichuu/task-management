@@ -1,9 +1,12 @@
 import admin from 'firebase-admin';
 import serviceAccount from '../firebase-adminsdk.json' assert { type: 'json' };
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://task-manage-6d6d5-default-rtdb.asia-southeast1.firebasedatabase.app', // Realtime Database URL
+  databaseURL: process.env.FIREBASE_DATABASE_URL, // Realtime Database URL
 });
 
 const db = admin.database(); // Initialize Realtime Database
